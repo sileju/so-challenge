@@ -61,4 +61,4 @@ class TestPlotter:
         expected_rolling = df['question_count'].rolling(12).mean().iloc[-1]
         # Check the y data for the red line
         red_line_y = calls[1][0][1]  # Second call, second arg is y
-        assert red_line_y[-1] == pytest.approx(expected_rolling)
+        assert red_line_y.iloc[-1] == pytest.approx(expected_rolling)
