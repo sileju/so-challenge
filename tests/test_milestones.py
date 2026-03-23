@@ -48,7 +48,7 @@ class TestMilestones:
         calls = axes.text.call_args_list  # Assuming text is used for labels
         expected_labels = ['Transformer', 'ChatGPT']
         for i, call in enumerate(calls):
-            assert call[0][0] == expected_labels[i]  # First arg is text
+            assert call[0][2] == expected_labels[i]  # Third arg is text
 
     @mock.patch('milestones.plt')
     def test_markers_in_correct_order(self, mock_plt):
