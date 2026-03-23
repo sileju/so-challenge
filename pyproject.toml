@@ -1,0 +1,14 @@
+[project]
+name = "so-challenge"
+version = "0.1.0"
+description = "A Python project for SO challenge"
+dependencies = [
+    "pandas",
+    "matplotlib",
+    "requests",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest",
+]

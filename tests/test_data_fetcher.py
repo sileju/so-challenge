@@ -1,0 +1,5 @@
+"""
+
+Tests for data_fetcher module.
+
+"""
