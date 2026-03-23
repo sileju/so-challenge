@@ -35,7 +35,8 @@ def main():
     # Finalize plot
     plt.title('Stack Overflow Monthly Questions with AI Milestones')
     plt.tight_layout()
-    plt.show()
+    plt.savefig('so_challenge_plot.png')
+    print("Plot saved as 'so_challenge_plot.png'")
 
 if __name__ == "__main__":
     main()
